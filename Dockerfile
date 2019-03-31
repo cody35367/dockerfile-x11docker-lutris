@@ -3,7 +3,7 @@ FROM x11docker/xfce
 RUN \
 apt-get update && \
 apt-get dist-upgrade -y && \
-apt-get install gnupg wget -y && \
+apt-get install gnupg wget pciutils -y && \
 dpkg --add-architecture i386 && \
 wget -q https://dl.winehq.org/wine-builds/winehq.key -O- | apt-key add - && \
 wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_9.0/Release.key -O- | apt-key add - && \
